@@ -1,0 +1,40 @@
+.form {
+    margin: 80px auto;
+    text-align: center;
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(243, 234, 222);
+
+}
+
+.form__fieldset {
+    margin: 20px auto;
+    border-width: 5px;
+    border-color: hsl(180, 57%, 44%);
+}
+
+.form__legend {
+    color: hsl(180, 66%, 15%);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form__label {
+    color: hsl(180, 66%, 15%);
+    font-weight: 600;
+    max-width: 250px;
+    width: 100%;
+    margin: 20px auto;
+
+}
+
+.form__field {
+    resize: none;
+
+}
+
+.form__button {
+    margin: auto;
+    background-color: #eee;
+    cursor: pointer;
+}
