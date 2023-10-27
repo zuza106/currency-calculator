@@ -9,5 +9,8 @@ html {
 }
 
 .body {
-  background-color: #eee;
+  background-image: url("../images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
