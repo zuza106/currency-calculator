@@ -37,13 +37,23 @@
 
     };
 
+
     const init = () => {
         const formElement = document.querySelector(".js-form");
-        formElement.addEventListener("submit", onFormSubmit);
-
+        formElement.addEventListener("submit", onFormSubmit)
     };
+
+
+
 
     init();
 
 
 }
+
+/*
+const cleanResult = (resultText) => {
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("reset")
+    resultElement.innerText = '';
+};*/
