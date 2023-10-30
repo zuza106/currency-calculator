@@ -38,22 +38,22 @@
     };
 
 
-    const init = () => {
+    const cleanResult = (resultText) => {
         const formElement = document.querySelector(".js-form");
-        formElement.addEventListener("submit", onFormSubmit)
-    };
+        formElement.addEventListener("reset")
+        resultElement.innerText = '';
+
+        const init = () => {
+            const formElement = document.querySelector(".js-form");
+            formElement.addEventListener("submit", onFormSubmit)
+            cleanResult ();
+        };
 
 
 
 
-    init();
+        init();
 
 
-}
+    }
 
-/*
-const cleanResult = (resultText) => {
-    const formElement = document.querySelector(".js-form");
-    formElement.addEventListener("reset")
-    resultElement.innerText = '';
-};*/
