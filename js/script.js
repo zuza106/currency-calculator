@@ -39,21 +39,17 @@
 
 
     const cleanResult = (resultText) => {
-        const formElement = document.querySelector(".js-form");
-        formElement.addEventListener("reset")
-        resultElement.innerText = '';
+        resultText.innerText = '';
+    }
 
         const init = () => {
             const formElement = document.querySelector(".js-form");
-            formElement.addEventListener("submit", onFormSubmit)
-            cleanResult ();
+            formElement.addEventListener("submit", onFormSubmit);
+            formElement.addEventListener("reset", cleanResult);
         };
 
 
 
 
         init();
-
-
     }
-}
