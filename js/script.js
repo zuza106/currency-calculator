@@ -30,7 +30,6 @@
 
         const amount = +amountElement.value;
         const currency = currencyElement.value;
-
         const result = calculateResult(amount, currency);
 
         resultText(amount, result, currency);
@@ -42,14 +41,14 @@
         resultText.innerText = '';
     }
 
-        const init = () => {
-            const formElement = document.querySelector(".js-form");
-            formElement.addEventListener("submit", onFormSubmit);
-            formElement.addEventListener("reset", cleanResult);
-        };
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+        formElement.addEventListener("reset", cleanResult);
+    };
 
 
 
 
-        init();
-    }
+    init();
+}
