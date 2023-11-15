@@ -17,10 +17,14 @@
         }
     };
 
-    const resultText = (amount, result, currency) => {
-        const resultElement = document.querySelector(".js-resultElement");
-        resultElement.innerText = `${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currency}`;
+    const getResultText = (amount, result, currency) => {
+        setResultText (`${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currency}`);
     };
+
+    const setResultText = (text) => {
+        const resultElement = document.querySelector(".js-resultElement");
+        resultElement.innerText = text;
+    }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -37,8 +41,8 @@
     };
 
 
-    const cleanResult = (resultText) => {
-        resultText.innerText = '';
+    const cleanResult = () => {
+        setResultText.innerText = (" ");
     }
 
     const init = () => {
