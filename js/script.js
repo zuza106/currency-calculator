@@ -42,7 +42,7 @@
 
 
     const cleanResult = () => {
-        setResultText.innerText = (" ");
+        setResultText.innerText = ("");
     }
 
     const init = () => {
