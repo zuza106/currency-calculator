@@ -36,7 +36,7 @@
         const currency = currencyElement.value;
         const result = calculateResult(amount, currency);
 
-        resultText(amount, result, currency);
+        getResultText(amount, result, currency);
 
     };
 
