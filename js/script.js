@@ -18,7 +18,7 @@
     };
 
     const getResultText = (amount, result, currency) => {
-        setResultText (`${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currency}`);
+        setResultText(`${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currency}`);
     };
 
     const setResultText = (text) => {
@@ -42,7 +42,7 @@
 
 
     const cleanResult = () => {
-        setResultText.innerText = ("");
+        setResultText("");
     }
 
     const init = () => {
