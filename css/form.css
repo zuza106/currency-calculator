@@ -11,6 +11,7 @@
     margin: 20px auto;
     border-width: 5px;
     border-color: hsl(180, 57%, 44%);
+    border-style: solid;
 }
 
 .form__legend {
